@@ -6,7 +6,8 @@ const GTSchema = require('../models/guatemala');
     GTSchema.find().then((data) => {
       res.status(200).json({
         ok: true,
-        data
+        data,
+        name : "Josue Emanuel Lopez Zamora"
       });
     }).catch((err) => {
       res.status(400).json({
@@ -26,7 +27,8 @@ const GTSchema = require('../models/guatemala');
     newProyecto.save().then((data) => {
       res.status(201).json({
         ok: true,
-        data
+        data,
+        name : "Josue Emanuel Lopez Zamora"
       });
     }
     ).catch((err) => {

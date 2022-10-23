@@ -4,7 +4,8 @@ const CRSchema = require('../models/costaRica');
     CRSchema.find().then((data) => {
       res.status(200).json({
         ok: true,
-        data
+        data,
+        name: "Josue Emanuel Lopez Zamora"
       });
     }).catch((err) => {
       res.status(400).json({
@@ -24,7 +25,8 @@ const CRSchema = require('../models/costaRica');
     newProyecto.save().then((data) => {
       res.status(201).json({
         ok: true,
-        data
+        data,
+        name : "Josue Emanuel Lopez Zamora"
       });
     }).catch((err) => {
       res.status(400).json({
